@@ -1,14 +1,15 @@
 import React from 'react';
+import "./style.css";
 
 function Homepage()
 {
     return (
 
-        <nav ClassName='homepage'>
             <div className='homepage-container'>
-                <p>hello</p>
+               <div className="homepage">
+                <h1>Welcome to the guessing game!</h1>
+               </div>
             </div>
-        </nav>
     );
 }
 
