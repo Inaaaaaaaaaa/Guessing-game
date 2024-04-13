@@ -1,16 +1,37 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*Prevents scrollbars*/
+}
+
+/*Fixes the white padding at the top of the screen*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 .homepages
 {
     background: linear-gradient(
         to right,
-        #7f53ac,
-        #657ced
+        #D1BB9E,
+        #EAD8C0
     );
 
     min-height: 100vh;
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+h1
+{
+    text-align: center;
 }
 
 .homepage-container
@@ -22,33 +43,65 @@
     padding: 0;
 }
 
-.box
-{
+.box {
     display: flex;
+    flex-direction: column; 
     justify-content: space-between;
-    margin-right: 4px;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background-color: antiquewhite;
+    align-items: center; 
+    width: 500px;
+    height: 400px;
+    background-color: #D1BB9E;
     border: 2px solid #333;
     border-radius: 10px;
     padding: 30px 40px;
-    justify-content: space-around;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.wrapper button
+
+.buttons
 {
-    width: calc(100% - 80px);
-    margin-top: auto;
-    height: 45px;
-    background-color: aliceblue;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 40px;
+    margin: 60px auto;
+}
+
+.submit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background: #dfd3c1;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 700;
+}
+
+.button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background: #dfd3c1;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.guess
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background: #dfd3c1;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+form
+{
+    display: flex;
+    align-items: center;
 }
